@@ -8,10 +8,12 @@ var Todo = mongoose.model('Todo', {
         trim: true
     },
     completed: {
-        type: Boolean
+        type: Boolean,
+        default: 'Yes! Its done'
     },
     completedAt: {
-        type: Number
+        type: Number,
+        default: 123
     }
 });
 
